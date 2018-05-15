@@ -1,0 +1,10 @@
+{
+  "conv_filters_1": 32,
+  "conv_filters_2": 32,
+  "dropout_1": 0.5,
+  "dense_units_1": 128,
+  "dense_units_2": 256,
+  "dropout_2": 0.1,
+  "epochs": 12,
+  "batch_size": 32
+}

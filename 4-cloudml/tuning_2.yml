@@ -1,0 +1,35 @@
+trainingInput:
+  hyperparameters:
+    goal: MAXIMIZE
+    hyperparameterMetricTag: val_acc
+    maxTrials: 15
+    max_parallel_trials: 3
+    params:
+      - parameterName: conv_filters_1
+        type: DISCRETE
+        discreteValues: [8, 16, 32]
+      - parameterName: conv_filters_2
+        type: DISCRETE
+        discreteValues: [8, 16, 32]
+      - parameterName: dropout_1
+        type: DOUBLE
+        minValue: 0
+        maxValue: 0.75
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: dense_units_1
+        type: DISCRETE
+        discreteValues: [32, 64, 128, 256]
+      - parameterName: dense_units_2
+        type: DISCRETE
+        discreteValues: [32, 64, 128, 256]
+      - parameterName: dropout_2
+        type: DOUBLE
+        minValue: 0
+        maxValue: 0.75
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: epochs
+        type: DISCRETE
+        discreteValues: [12]
+      - parameterName: batch_size
+        type: DISCRETE
+        discreteValues: [32, 64]
